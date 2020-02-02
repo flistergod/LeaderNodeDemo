@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="JSF" type="jsf">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../javax.faces-api-2.3-javadoc.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

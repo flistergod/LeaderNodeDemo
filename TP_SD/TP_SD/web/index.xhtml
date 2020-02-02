@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<head>
+   <title>Web Service</title>
+</head>
+<body>
+
+<h1>Here you can manage the Place Managers</h1>
+<br></br><br></br>
+
+<h4>Search information from a Place Manager</h4>
+
+<h:form>
+   <h:inputText value="#{webHandler.port}"/>
+   <h:commandButton value="Submit" action="#{webHandler.sendPort()}"/>
+</h:form>
+
+<br></br><br></br>
+
+<h4>Create a new Place Manager</h4>
+<h:form>
+   <h:inputText value="#{webHandler.port1}"/>
+   <h:commandButton value="Submit" action="#{webHandler.sendPort1()}"/>
+</h:form>
+
+<br></br><br></br>
+
+<h4>Insert a Location</h4>
+<h:form>
+   <h:inputText value="#{webHandler.port2}"/> location<br></br>
+   <h:inputText value="#{webHandler.port3}"/> postal code<br></br>
+   <h:commandButton value="Submit" action="#{webHandler.sendPort2()}"/>
+</h:form>
+
+<br></br><br></br><br></br><br></br>
+<hr></hr>
+<h2>Result:</h2>
+
+#{webHandler.answer}
+<br></br>
+#{webHandler.livingTime}
+<br></br>
+#{webHandler.knownPMs}
+<br></br>
+#{webHandler.knownPlaces}
+<br></br>
+#{webHandler.leader}
+<br></br><br></br>
+
+</body>
+</html>
