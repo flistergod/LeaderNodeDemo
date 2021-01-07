@@ -1,4 +1,4 @@
-# SD
+# LeaderNodeDemo
 Trabalho Final
 Este Projeto utiliza como servidor para o web Service o Glassfish.
 Este utiliza 2 ports: 4848 e 8080.
